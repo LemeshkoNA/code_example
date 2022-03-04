@@ -1,0 +1,100 @@
+.lots_filter{
+  padding: 30px 0;
+
+  .range_select{
+    width: 100%;
+  }
+
+  .input{
+    background: #F2F3F8;
+    border-radius: 4px;
+    height: 40px;
+    padding: 8px 16px;
+  }
+
+  .price_input{
+    display: flex;
+    background: #F2F3F8;
+    border-radius: 4px;
+    height: 40px;
+    padding: 8px 16px;
+    &>div{
+      cursor: pointer;
+      font-size: 12px;
+      line-height: 130%;
+      color: #A2ABCD;
+      align-self: center;
+      position: relative;
+      right: 60px;
+    }
+  }
+
+  h4{
+    font-style: normal;
+    //font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #353859;
+    padding-bottom: 16px;
+    padding-top: 40px;
+
+    &:first-child{
+      padding-top: 0;
+    }
+  }
+
+  .checkbox_line{
+    display: flex;
+    padding-bottom: 8px;
+    font-size: 16px;
+
+    &:last-child{
+      padding-bottom: 0;
+    }
+  }
+
+  .completitionDays{
+    display: flex;
+    padding-bottom: 40px;
+
+    input{
+      width: 126px;
+
+      &:first-child{
+        margin-right: 16px;
+      }
+    }
+  }
+
+}
+
+.radius_select{
+  display: flex;
+
+  &>div{
+    margin-right: 1px;
+    color: #1E82C1;
+    background-color: #F2F3F8;
+    $radius-value: 4px;
+    display: flex;
+    width: 53px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:hover{
+      background-color: #e5e6fa;
+    }
+
+    &:first-child{
+      border-top-left-radius: $radius-value;
+      border-bottom-left-radius: $radius-value;
+    }
+
+    &:last-child{
+      border-top-right-radius: $radius-value;
+      border-bottom-right-radius: $radius-value;
+    }
+  }
+}
